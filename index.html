@@ -1,7 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV Professionnel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        embed {
+            width: 100%;
+            height: 500px; /* Adjust height based on your preference */
+        }
+    </style>
+</head>
 <body>
-    <p><a href="mon-cv.pdf">Téléchargez mon CV ici!</a></p>
-    <embed src="mon-cv.pdf" width="100%" height="600px" />
+    <div class="container">
+        <header>
+            <h1>Bienvenue sur mon CV en ligne</h1>
+            <p>Cliquez <a href="mon-cv.pdf">ici</a> pour télécharger le PDF</p>
+        </header>
+        <embed src="mon-cv.pdf" type="application/pdf">
+    </div>
 </body>
 </html>
